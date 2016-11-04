@@ -8,4 +8,4 @@ This is the self-reflective association. This is the self-reflective association
 ### Doctor has many patients
 ### Patient has many doctors
 
-### Reception is a jpin table 
+### Reception is a join table 

@@ -5,3 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+    puts "Destroying all Data"
+    User.destroy_all
+    Appointment.destroy_all
+    puts "Creating new data"
+    
+    10.times do
+      u = User.new
+      u.name = Faker::Name.name
+      u.save!
+    end
+    
+    10.times do 
+      a = Appointment.new
+      a.doctor_id = User.all.sample.id
+      a.patient_id = User.all.sample.id
+      a.save!
+    end
+    puts "Created bunch of new data"
