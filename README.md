@@ -6,6 +6,6 @@ This is the self-reflective association. This is the self-reflective association
 ### By Farruh
 
 ### Doctor has many patients
-### Patient belongs to a Doctor
+### Patient has many doctors
 
-### Reception is through table 
+### Reception is a jpin table 
